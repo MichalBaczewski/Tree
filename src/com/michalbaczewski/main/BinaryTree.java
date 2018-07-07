@@ -8,7 +8,7 @@ public class BinaryTree {
         this.root = root;
     }
 
-    public void showTreePreOrder(){
+  /*  public void showTreePreOrder(){
         System.out.println("pre-order: ");
         preOrder(root);
         System.out.println();
@@ -52,6 +52,12 @@ public class BinaryTree {
 
     private static void visit(Node node) {
         System.out.print(node.getValue() + " ");
-    }
+    }*/
+
+  public void showTree(OrderEnum orderEnum) {
+      System.out.println(orderEnum.name() + ": ");
+      orderEnum.showTree(root);
+      System.out.println();
+  }
 
 }
