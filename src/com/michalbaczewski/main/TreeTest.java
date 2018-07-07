@@ -16,7 +16,9 @@ public class TreeTest {
 
         BinaryTree tree = new BinaryTree(root);
 
-        tree.showTreeInPreOrder();
+        tree.showTreePreOrder();
+        tree.showTreeInOrder();
+        tree.showTreePostOrder();
 
     }
 
